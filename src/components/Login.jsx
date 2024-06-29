@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../assets/Mobile_login.png'
-import { Form ,Button} from 'react-bootstrap'
+import { Form ,Button,InputGroup} from 'react-bootstrap'
 
 const Login = () => {
   return (
@@ -9,14 +9,17 @@ const Login = () => {
             <img src={Img}  />
         </div>
         <div className="formContainer">
-            <h1>Login</h1>
+            <h1 className="px-5 mt-2">Login</h1>
             <Form>
-                <Form.Control  className = "mt-3" type='email' placeholder='name@example.com'/>
-                <Form.Control className = "mt-3" type='password' placeholder='*******'/>
+                <Form.Control  className = "mt-2" type='email' placeholder='name@example.com'/>
+                <Form.Control className = "mt-4" type='password' placeholder='*******'/>
 
-                <Button className = "mt-4">Login</Button>
+                <InputGroup className="mt-4 mb-3  ">
+                    <Button className="rounded">Login</Button>
+                    <p className='mx-4 my-auto'>Don't have an account? <a href='/register'>Register</a></p>
+                  </InputGroup>
             </Form>
-            <p className='mt-2'>Don't have an account? <a href='/register'>Register</a></p>
+            
         </div>
         
         

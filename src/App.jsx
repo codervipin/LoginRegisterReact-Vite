@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import Register from './components/Register'
 import Login from './components/Login'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
